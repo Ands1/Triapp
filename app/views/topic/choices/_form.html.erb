@@ -1,0 +1,17 @@
+<%= form_with(model: topic_choice) do |form| %>
+  <% if topic_choice.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(topic_choice.errors.count, "error") %> prohibited this topic_choice from being saved:</h2>
+
+      <ul>
+        <% topic_choice.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

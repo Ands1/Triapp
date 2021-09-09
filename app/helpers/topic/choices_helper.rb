@@ -1,0 +1,2 @@
+module Topic::ChoicesHelper
+end

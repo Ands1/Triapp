@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Triapp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <% if !notice.blank? %>
+        <% alert_class = flash[:error]? "alert alert-danger" : 'alert alert-success' %>
+        <div role="alert" class="<%= alert_class %>">
+        <p class="notice"><%= notice %></p>
+      </div>
+      <% end%>
+      <p class="alert"><%= alert %></p>
+
+    <div class="container">  
+      <%= yield %>
+    </div>
+  </body>
+</html>
