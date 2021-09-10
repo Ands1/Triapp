@@ -4,9 +4,6 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.0.1'
 # Flexible authentication solution for Rails with Warden.
 gem 'devise'
-# Quiz gem app
-gem 'quizzes'
-
 # Postgres gem to manage databases
 gem "pg", ">= 0.18", "< 2.0"
 # Bulma Gem to give styles to app

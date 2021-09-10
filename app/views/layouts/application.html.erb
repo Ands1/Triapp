@@ -6,11 +6,43 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> 
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous" ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap" rel="stylesheet"> 
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+
+  <div class="container-app">
+      <div class="container-quiz">
+          <div class="quiz-header">
+            <h1>Trivia</h1>
+          </div>
+          <div class="quiz-main">
+
+          </div>
+          <div class="quiz-footer">
+
+          </div>
+      </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
     <% if !notice.blank? %>
         <% alert_class = flash[:error]? "alert alert-danger" : 'alert alert-success' %>
         <div role="alert" class="<%= alert_class %>">
